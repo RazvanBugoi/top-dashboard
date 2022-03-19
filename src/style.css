@@ -15,6 +15,10 @@
   padding: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
@@ -33,11 +37,10 @@
   margin-bottom: 50px;
 }
 
-.container .sidebar .general-settings p,
+.container .sidebar .general-settings li > a,
 .container .sidebar .title h1,
-.container .sidebar .user-settings p {
-  display: grid;
-  grid-template-columns: 1fr 10fr;
+.container .sidebar .user-settings li > a {
+  display: flex;
   align-items: center;
 }
 
