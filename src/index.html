@@ -16,22 +16,22 @@
 <!-- SIDEBAR -->
     <div class="sidebar">
       <div class="title">
-        <h1><img src="./assets/view-dashboard.svg" alt="Dashboard Icon">Dashboard</h1>
+        <a class="sidebar-link" href="#"><img class="logo" src="./assets/view-dashboard.svg" alt="Dashboard Icon">Dashboard</a>
       </div>
 
         <ul class="general-settings">
-          <li><a href="#"><img src="./assets/home.svg" alt="Home Icon">Home</a></li>
-          <li><a href="#"><img src="./assets/account-tie.svg" alt="Home Icon">Profile</a></li>
-          <li><a href="#"><img src="./assets/message-settings.svg" alt="Home Icon">Messages</a></li>
-          <li><a href="#"><img src="./assets/history.svg" alt="Home Icon">History</a></li>
-          <li><a href="#"><img src="./assets/file-document-multiple.svg" alt="Home Icon">Tasks</a></li>
-          <li><a href="#"><img src="./assets/account-group.svg" alt="Home Icon">Communities</a></li>
+          <li><a class="sidebar-link" href="#"><img class="sidebar-img" src="./assets/home.svg" alt="Home Icon">Home</a></li>
+          <li><a class="sidebar-link" href="#"><img class="sidebar-img" src="./assets/account-tie.svg" alt="Home Icon">Profile</a></li>
+          <li><a class="sidebar-link" href="#"><img class="sidebar-img" src="./assets/message-settings.svg" alt="Home Icon">Messages</a></li>
+          <li><a class="sidebar-link" href="#"><img class="sidebar-img" src="./assets/history.svg" alt="Home Icon">History</a></li>
+          <li><a class="sidebar-link" href="#"><img class="sidebar-img" src="./assets/file-document-multiple.svg" alt="Home Icon">Tasks</a></li>
+          <li><a class="sidebar-link" href="#"><img class="sidebar-img" src="./assets/account-group.svg" alt="Home Icon">Communities</a></li>
         </ul>
 
         <ul class="user-settings">
-          <li><a href="#"><img src="./assets/cog.svg" alt="Home Icon">Settings</a></li>
-          <li><a href="#"><img src="./assets/face-agent.svg" alt="Home Icon">Support</a></li>
-          <li><a href="#"><img src="./assets/lock-check.svg" alt="Home Icon">Privacy</a></li>
+          <li><a class="sidebar-link" href="#"><img class="sidebar-img" src="./assets/cog.svg" alt="Home Icon">Settings</a></li>
+          <li><a class="sidebar-link" href="#"><img class="sidebar-img" src="./assets/face-agent.svg" alt="Home Icon">Support</a></li>
+          <li><a class="sidebar-link" href="#"><img class="sidebar-img" src="./assets/lock-check.svg" alt="Home Icon">Privacy</a></li>
         </ul>
     </div>
 
@@ -43,27 +43,25 @@
           <input type="search" name="search" id="search-bar">
         </div>
         <div class="notifications-tab">
-          <img src="./assets/bell-ring-outline.svg" alt="Notifications Bell">
-          <img src="./assets/emoticon-cool-outline.svg" alt="User Picture">
-          <p>Razvan Bugoi</p>
+          <img id="notification-bell" src="./assets/bell-ring-outline.svg" alt="Notifications Bell">
+          <img id="avatar-icon" src="./assets/emoticon-cool-outline.svg" alt="User Picture">
+          <p id="username">Razvan Bugoi</p>
         </div>
       </div>
 
       <div class="user-main-tab-wrapper">
         <div class="avatar-wrapper">
-          <img src="./assets/emoticon-cool-outline.svg" alt="User profile picture">
-          <p>Hi there,</p>
-          <h2>Razvan Bugoi (@razbugoi)</h2>
+          <img id="avatar-big" src="./assets/emoticon-cool-outline.svg" alt="User profile picture">
+          <p id="welcome-message">Hi there,</p>
+          <h2 id="username-big">Razvan Bugoi (@razbugoi)</h2>
         </div>
-        <div class="navbar-wrapper">
-          <nav>
-            <ul>
-              <li><button>New</button></li>
-              <li><button>Upload</button></li>
-              <li><button>Share</button></li>
+          <nav class="navbar">
+            <ul class="navbar-wrapper">
+              <li id="first-button"><button class="nav-button">New</button></li>
+              <li><button class="nav-button">Upload</button></li>
+              <li><button class="nav-button">Share</button></li>
             </ul>
           </nav>
-        </div>
       </div>
     </div>
 
