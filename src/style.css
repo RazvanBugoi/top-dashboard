@@ -218,7 +218,7 @@ ul {
   grid-template-columns: 1fr 1fr 0.75fr;
   grid-template-rows: 1fr 1fr;
   column-gap: 20px;
-  padding: 40px 25px 60px 25px;
+  padding: 0 20px 60px 20px;
 }
 
 .projects {
@@ -227,8 +227,7 @@ ul {
   resize: both;
   overflow: auto;
   display: grid;
-  gap: 20px;
-  padding: 50px 10px 10px 10px;
+  column-gap: 20px;
   grid-template-rows: repeat(3, 1fr);
   grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   position: relative;
@@ -242,8 +241,7 @@ ul {
 
 .projects #your-projects {
   position: absolute;
-  top: 15px;
-  left: 10px;
+  top: 30px;
 }
 
 .announcements {
@@ -253,6 +251,13 @@ ul {
 .trendings {
   grid-column: 3/4;
   grid-row: 2/3;
+  
+}
+
+.announcements, .trendings {
+  position: relative;
+  background-color: #d1d5db;
+  margin-top: 60px;
 }
 
 .project-box {
@@ -260,6 +265,7 @@ ul {
   padding: 40px 25px 30px 25px;
   border-radius: 5px;
   background-color: #d1d5db;
+  margin-top: 60px;
 }
 
 .articles-ul {
@@ -274,4 +280,9 @@ ul {
 
 .first-link {
   grid-column: 10/11;
+}
+
+.title-main-content {
+  position: absolute;
+  top: -30px;
 }
