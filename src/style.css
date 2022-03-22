@@ -204,7 +204,7 @@ ul {
   min-width: 80px;
   min-height: 32px;
   border-radius: 15px;
-  background-color: blue;
+  background-color: #1f2937;
   color: #fafaf9;
   border-width: 0;
   font-weight: 600;
@@ -217,7 +217,10 @@ ul {
   display: grid;
   grid-template-columns: 1fr 1fr 0.75fr;
   grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
+  padding: 40px 25px 60px 25px;
 }
+
 .projects {
   grid-column: 1/3;
   grid-row: span 2;
@@ -226,12 +229,16 @@ ul {
   display: grid;
   gap: 20px;
   padding: 50px 10px 10px 10px;
-  border: 1px solid grey;
-  background-color: skyblue;
   grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   position: relative;
 }
+
+.projects div {
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+}
+
 
 .projects #your-projects {
   position: absolute;
@@ -249,5 +256,22 @@ ul {
 }
 
 .project-box {
-  border: 2px solid black;
+  border-left: 5px solid #fdba74;
+  padding: 40px 25px 30px 25px;
+  border-radius: 5px;
+  background-color: #d1d5db;
+}
+
+.articles-ul {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-top: 25px;
+}
+
+.project-box ul:nth-child(1) {
+  grid-column: 10/11;
+}
+
+.first-link {
+  grid-column: 10/11;
 }
